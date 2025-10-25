@@ -3,3 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.about {
+  display: flex;
+}
+
+.work div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.work > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+}
