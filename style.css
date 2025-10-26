@@ -121,7 +121,7 @@ h1 {
   background-color: var(--green-bg);
 }
 
-.project-card {
+.plant-card {
   max-width: 400px;
   height: 500px;
   box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.5);
@@ -135,20 +135,20 @@ h1 {
   padding-bottom: 16px;
 }
 
-.project-card > div {
+.plant-card > div {
   display: flex;
   flex-direction: column;
   padding: 0 24px 64px;
 }
 
-.project-card .card-header {
+.plant-card .card-header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 12px 0;
 }
 
-.project-card p {
+.plant-card p {
   color: var(--grey-text);
 }
 
@@ -164,6 +164,10 @@ h1 {
 
 .contact span svg {
   margin-right: 12px;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 1070px) {
