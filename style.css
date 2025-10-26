@@ -37,6 +37,10 @@ svg {
   justify-content: flex-end;
 }
 
+.plants {
+  margin: 0 64px;
+}
+
 .plants > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -97,12 +101,13 @@ h1 {
 }
 
 .about div:nth-child(2) {
-  width: 600px;
+  max-width: 600px;
   box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.5);
   height: 100%;
   padding: 12px;
   margin: auto 0;
   background-color: white;
+  flex-shrink: 3;
 }
 
 .header-banner {
@@ -159,4 +164,84 @@ h1 {
 
 .contact span svg {
   margin-right: 12px;
+}
+
+@media (max-width: 1070px) {
+  .plants > div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about h2 {
+    top: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 48px 0;
+  }
+
+  .about div:nth-child(2) {
+    box-shadow: none;
+  }
+
+  .about img {
+    height: 100%;
+  }
+
+  .about h1 {
+    text-align: center;
+  }
+
+  .about-svgs {
+    justify-content: center;
+  }
+
+  .about h2 {
+    font-size: 5rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact img {
+    width: 100%;
+  }
+
+  .contact h1 {
+    text-align: center;
+  }
+
+  .contact span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .plants > div {
+    grid-template-columns: 1fr;
+  }
+
+  .plants {
+    margin: 16px;
+  }
+
+  .header-banner {
+    top: -50%;
+  }
+
+  .about h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .header-banner {
+    top: -50%;
+  }
 }
