@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 :root {
   --green-bg: rgb(25, 90, 25);
   --grey-text: #585858;
