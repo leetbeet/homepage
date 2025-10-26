@@ -6,6 +6,7 @@
 
 :root {
   --green-bg: rgb(25, 90, 25);
+  --grey-text: #585858;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
   display: flex;
   width: 80vw;
   justify-content: center;
-  padding-top: 32px;
+  padding: 48px 0 84px;
 }
 
 svg {
@@ -33,14 +34,14 @@ svg {
   justify-content: flex-end;
 }
 
-.work div {
+.plants > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 48px;
   align-items: center;
 }
 
-.work > div > div {
+.plants > div > div {
   display: flex;
   flex-direction: column;
 }
@@ -70,7 +71,7 @@ svg {
 
 .about p {
   font-size: 22px;
-  color: #585858;
+  color: var(--grey-text);
   padding-bottom: 54px;
 }
 
@@ -85,7 +86,7 @@ svg {
 
 .about div:nth-child(2) {
   width: 600px;
-  box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.5);
   height: 100%;
   padding: 12px;
   margin: auto 0;
@@ -101,4 +102,35 @@ svg {
   transform: skewY(-8deg);
   z-index: -1;
   background-color: var(--green-bg);
+}
+
+.project-card {
+  max-width: 400px;
+  height: 500px;
+  box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.5);
+}
+
+.plants img {
+  width: 100%;
+}
+
+.plants h1 {
+  padding-bottom: 16px;
+}
+
+.project-card > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 64px;
+}
+
+.project-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.project-card p {
+  color: var(--grey-text);
 }
