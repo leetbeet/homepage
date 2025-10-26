@@ -209,6 +209,7 @@ a {
   .contact {
     flex-direction: column;
     gap: 40px;
+    margin-top: auto;
   }
 
   .contact img {
